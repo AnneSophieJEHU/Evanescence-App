@@ -1,0 +1,40 @@
+—————————————————————————————————————
+Object JSON - INDIVIDUALIZED PROJECT
+-------------------------------------
+MCD - RG - Règles de getsion
+
+Un établissement possède plusieurs projets personalisés et 
+plusieurs projets individualisés appartients à un établissement
+
+
+------------------------------
+Create 
+------------------------------
+
+POST 
+http://localhost:8787/evanescence/api/individualizedProject
+
+{
+    "personalData": {"lastName": "TANILDA", "firstName": "Maryse", "birthdate": "1940-09-21", "birthplace":"Paris",  "nativeLanguage":"Français", "otherslanguagesSproken":"Espagnol",  "maritalStatus":"Veuve, depuis 2008" },
+	"whereComeFrom": "Maison de repos les lilas",
+    "isItYourDecision": "true",
+    "religion": "Protestante",
+    "lastProfessionExercised": "assistante de gestion",
+    "isoResourceGroups": "GIR4",
+    "washHabit": "Madame fait sa toilettes seule. Elle la fait tous les jours. Elle utilise du gros savon marseille.",
+    "clothingHabit": "Fait sa lessive seule. Préfère les pantalons au jupe",
+    "dietaryHabit": "Madame mange sans sel ",
+    "mobiltyHabit": "Madame se déplace seule. Elle n'a besoin d'une aide. ",
+    "breathingHabit": "Petit problème d'essouflement lorsqu'elle effectue une effort intense. Par exemple monter les escalier.",
+    "eliminationHabit": "Elemination correcte. Protection la nuit",
+    "sleepHabit": "Nuit courte depuis de nombres années suite au décès de son mari. Horaire couché 22h. Levée à 4h-4h30",
+    "communicationHabit": "Rien d'anormal",
+    "cultureAndHobbiesHabit": "Madame lit beaucoup. Notamment la bible. Je rends culte tous les dimanches avec sa fille année. Va au cinéma de la ville lorsqu'il y a films d'époque à l'affiche. Aime assisté au match de volley ball",
+    "peoplePresent": "M le directeur, le résident, sa fille année"
+}
+
+
+
+
+
+

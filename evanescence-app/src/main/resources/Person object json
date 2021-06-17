@@ -1,0 +1,45 @@
+{  
+"lastName" : "Lané",  
+"fistName" : "Zity" ,    
+"socialSecurityNumber" : 123456789012342,   
+"gender": "Man",
+"birthDate": "1993-09-21",
+"emailAddress": "zinatypole.residence@alivianresi.com",
+"phoneNumber": "0798325465",
+"active": "True",
+"entryDate" : "2003-09-21"
+"releaseDate": null,
+"exitReason": null,
+"addressPerson": {"wordingAddress": "2 boulevard desjeans", "zipCode": "75015", "cityName":"Paris" }
+}
+
+{  
+"lastName" : "Matching",  
+"fistName" : "Paul",    
+"socialSecurityNumber" : 129732343123443,   
+"gender": "Man",
+"birthDate": "1981-09-21",
+"emailAddress": "PaulMatching.residence@alivianresi.com",
+"phoneNumber": "0569124536",
+"active": "True",
+"entryDate" : "2013-09-21"
+"releaseDate": null,
+"exitReason": null,
+"addressPerson": {"wordingAddress": "Impasse jean ménard", "zipCode": "75015", "cityName":"Paris" }
+}
+
+
+{  
+"lastName" : "Annazato",  
+"fistName" : "Marie Blanche" ,    
+"socialSecurityNumber" : 234562347896543,   
+"gender": "Man",
+"birthDate": "1991-12-21",
+"emailAddress": "annazatoMarie.residence@homavie.com",
+"phoneNumber": "0934526372",
+"active": "True",
+"entryDate" : "2019-09-21"
+"releaseDate": null,
+"exitReason": null,
+"addressPerson": {"wordingAddress": "13 rue des poules rondes", "zipCode": "92000", "cityName":"Nanterre" }
+}

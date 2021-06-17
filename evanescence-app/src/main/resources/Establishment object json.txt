@@ -1,0 +1,190 @@
+---------------------------
+Object JSON - ESTABLISHMENT
+—————————————--------------
+MCD - RG - Règles de getsion
+Un établissement a au plus une et une seule adresse(min,max)(1,1). 
+Pour exiter, une adresse doit appartenir au plus à un établissement et qu'à un seule établissement(1,1). 
+
+------------------------------
+create()
+------------------------------
+With 12 JSON objects 
+POST 
+http://localhost:8787/evanescence/api/establishment/create
+
+
+{
+	"businessName": "POUNOUTE",
+    "siretNumber": "23234677012397",
+    "emailAddress": "pounoute.residence@vandeo.com",
+    "phoneNumber": "0934561083",
+	"addressEstablishment": {"road": "2 Jeantille Peear", "zipCode": "75015", "cityName":"Paris" }
+}
+'
+{
+	"businesssName": "FAM SENIORS",
+    "siretNum": "12345671023454",
+    "emailAddress": "famseniors.residence@alivianresi.com",
+    "phoneNumber": "0798325465",
+	"addressEstablishment": {"road": "20 impasse Olive Timberl", "zipCode": "92000", "cityName":"Nanterre" }
+}
+
+{
+    "siretNum": "23234672313211",
+    "businesssName": "AGALYNE",
+    "emailAddress": "agalyne.residence@vandeo.com",
+    "phoneNumber": "0932137854",
+	"addressEstablishment": {"road": "23 avenue Depaille", "zipCode": "75001", "cityName":"Paris" }
+}
+
+{
+    "siretNum": "12345678912347",
+    "businesssName": "ANALIBIA",
+    "emailAddress": "analibia.residence@arepa.fr",
+    "phoneNumber": "0987673409",
+	"addressEstablishment": {"road": "45 impasse Dumon Tile", "zipCode": "51000", "cityName":"Reims" }
+}
+
+{
+    "siretNum": "23234677013312",
+    "businesssName": "POULNOUTE",
+    "emailAddress": "poulnoute.residence@vandeo.com",
+    "phoneNumber": "0934561083",
+	"addressEstablishment": {"road": "56 Pierre Snipett", "zipCode": "75019", "cityName":"Paris" }
+}
+
+{
+    "siretNum": "12345678912344",
+    "businesssName": "ANALI",
+    "emailAddress": "anali.residence@arepa.fr",
+    "phoneNumber": "0987673409",
+    "addressEstablishment": {
+        "road": "18 sadi Poul",
+        "zipCode": "92000",
+        "cityName": "Nanterre"
+    }
+}
+
+{
+    "siretNum": "12345678923456",
+    "businesssName": "BAL GRAN MOUN",
+    "emailAddress": "balgranmoun.residence@lovenet.com",
+    "phoneNumber": "0987192300",
+	"addressEstablishment": {"road": "87 avenue Grosmangin", "zipCode": "51000", "cityName":"Reims" }
+}
+
+{
+    "siretNum": "12345678012346",
+    "businesssName": "PAPAYESUCREE",
+    "emailAddress": "papayesucree.residence@vandeo.com",
+    "phoneNumber": "0973497909",
+	"addressEstablishment": {"road": "25 Olivier Dumand", "zipCode": "75013", "cityName":"Paris" }
+}
+{
+    "siretNum": "12345673412231",
+    "businesssName": "NOUNOUTE",
+    "emailAddress": "nounoute.residence@vandeo.com",
+    "phoneNumber": "0934561083",
+	"addressEstablishment": {"road": "23 Dupon Specimen", "zipCode": "75017", "cityName":"Paris" }
+}
+
+{
+    "siretNum": "12345672312345",
+    "businesssName": "FAM' HOME",
+    "emailAddress": "famhome.residencepro@gmail.com",
+    "phoneNumber": "0934561233",
+	"addressEstablishment": {"road": "23 Union de la paix", "zipCode": "51100", "cityName":"Reims" }
+}
+
+{
+    "siretNum": "12345671812345",
+    "businesssName": "VIVA HOME",
+    "emailAddress": "viva.residencepro@gmail.com",
+    "phoneNumber": "0934562398",
+	"addressEstablishment": {"road": "1 boulevard Crispy Leon", "zipCode": "51100", "cityName":"Reims" }
+}
+
+{
+    "siretNum": "23234675212318",
+    "businesssName": "NALINA HOME",
+    "emailAddress": "nalinahome.residencepro@gmail.com",
+    "phoneNumber": "0789108323",
+	"addressEstablishment": {"road": "73 rue Fourbourd Tarne", "zipCode": "92130", "cityName":"Issy les Moulineaux" }
+}
+
+{
+    "siretNum": "23234675212301",
+    "businesssName": "VIVILIA HOME",
+    "emailAddress": "viviliahome.residencepro@gmail.com",
+    "phoneNumber": "0789104623",
+	"addressEstablishment": {"road": "7 impasse Bernard Berangère", "zipCode": "92000", "cityName":"Nanterre"}
+}
+
+{
+    "siretNum": "23234675212312",
+    "businesssName": "AIGLI AGE",
+    "emailAddress": "aigliage_residencepro@gmail.com",
+    "phoneNumber": "0789234567",
+	"addressEstablishment": {"road": "18 impasse de la paix", "zipCode": "92000", "cityName":"Nanterre"}
+}
+————————————————————————————————————-
+findAll()
+-------------------------------------
+GET mapping
+http://localhost:8787/evanescence/api/establishment/establishments
+
+————————————————————————————————————-
+findById()
+-------------------------------------
+GET mapping
+http://localhost:8787/evanescence/api/establishment/getone/1
+
+{
+    "active": true,
+    "businesssName": "POUNOUTE",
+    "sirenNum": "232346770",
+    "siretNum": "23234677012397",
+    "legalStatus": "Société par actions simplifiée",
+    "emailAddress": "pounoute.residence@vandeo.com",
+    "phoneNumber": "0934561083",
+    "registrationDate": "2003-09-21",
+    "capitalStock": 95000,
+    "closeDownDate": null,
+    "addressEstablishment": {
+        "wordingAddress": "2 Jeantille Peear",
+        "zipCode": "75015",
+        "cityName": "Paris"
+    }
+}
+
+————————————————————————————————————-
+updateById
+-------------------------------------
+PUT mapping
+http://localhost:8787/evanescence/api/establishment/update/1
+
+DON't FORGET TO MODIFY SOME ELEMENTS IN THIS OBJECT BELOW
+
+{
+    "active": "False",
+    "sirenNum": "232346770",
+    "siretNum": "23234677012397",
+    "businesssName": "POUNOUTE",
+    "legalStatus":"Société par actions simplifiée",
+    "emailAddress": "pounoute.residence@vandeo.com",
+    "phoneNumber": "0934561083",
+    "registrationDate": "2003-09-21",
+	"capitalStock": 95000,
+	"closeDownDate": "2020-03-12",
+	"addressEstablishment": {"wordingAddress": "2 Jeantille Peear", "zipCode": "75015", "cityName":"Paris" }
+}
+
+————————————————————————————————————-
+deleteById
+-------------------------------------
+DELETE mapping
+http://localhost:8787/evanescence/api/establishment/remove/1
+
+DON'T PUT ANYTHING IN THE BODY
+
+
